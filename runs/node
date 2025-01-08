@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+brew install node
+
+sudo npm config set prefix ~/.local/npm
+
+# install n
+sudo npm i -g n
+sudo n lts

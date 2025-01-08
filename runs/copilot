@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# add github copilot plugin for neovim
+git clone https://github.com/github/copilot.vim.git \
+  ~/.vim/pack/github/start/copilot.vim

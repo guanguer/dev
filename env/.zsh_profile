@@ -1,0 +1,23 @@
+export XDG_CONFIG_HOME="$HOME/.config"
+DEV_ENV=$HOME/DEV
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+alias vim="nvim"
+
+export N_PREFIX=$HOME/.local/n
+
+# bindkey for tmux-sessionizer
+bindkey -s ^f "tmux-sssionizer\n"
+
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH="$1:$PATH"
+    fi
+}
+
+addToPathFront $HOME/.local/scripts
+addToPathFront $HOME/.local/.npm-global/bin
+addToPathFront $HOME/.local/bin
+addToPathFront $HOME/.local/npm/bin
+addToPathFront $HOME/.local/n/bin
