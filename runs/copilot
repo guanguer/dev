@@ -2,4 +2,4 @@
 
 # add github copilot plugin for neovim
 git clone https://github.com/github/copilot.vim.git \
-  ~/.vim/pack/github/start/copilot.vim
+  ~/.config/nvim/pack/github/start/copilot.vim
